@@ -1,0 +1,12 @@
+<div class="card h-100 text-center">
+    <app-poster-image [classValues]="'card-img-top'" [alt]="description" *ngIf="image != ''" [src]="image"></app-poster-image>
+    <app-poster-image [classValues]="'card-img-top'" [alt]="description" *ngIf="image == ''" [src]="'./assets/img/anartz.jpg'"></app-poster-image>
+    <div class="card-body">
+        <h4 class="card-title">{{ title }}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{startData}} - {{ finishData}}</h6>
+        <p class="card-text">{{ description }}</p>
+    </div>
+    <div class="card-footer">
+            <a [href]="url" target="_blank" class="btn btn-primary">{{ 'buttons.goToProject' | translate }}</a>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<div class="container">
+
+  <!--<app-page-title [title]="'about.title'" [description]="'about.description'"></app-page-title>-->
+  <br/>
+  <app-breadcrumb [title]="'menus.home'" [path]="'home'" [page]="'about.description'"></app-breadcrumb>
+
+  <!-- Intro Content -->
+  <div class="row">
+    <div class="col-lg-6">
+      <app-poster-image [classValues]="'img-fluid rounded mb-4'" [src]="'https://www.innobasque.eus/images/articles/25204631393_d809d96a7e_o-20160321113958.jpg'" [alt]="'Opendata Servirace Marzo 2016'"></app-poster-image>
+      <div class="all-width">
+          <div class="center-element"><small>Concurso Opendata 2016 - Servirace</small></div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <p><strong>Soy desarrrolador web / m&oacute;vil</strong> con m&aacute;s de 10 a&ntilde;os de experiencia desde que me inici&eacute; en el mundo del desarrollo.</p>
+    
+      <p><strong>He trabajado en todo tipo de proyectos para diferentes &aacute;mbitos como el deporte, cultura, temas sociales, juegos, industria,...</strong></p>
+      
+      <p>Actualmente compagino mi trabajo como desarrollador con estudiar en la Universidad el Grado de Inform&aacute;tica, mis proyectos personales y mis otros hobbies entre los que destacan el deporte, videojuegos y mucho m&aacute;s.</p>
+      
+      <p><strong>Me apasiona&nbsp;programar, me gusta dedicarle algo de tiempo a diario</strong>, aunque sea a leer tutoriales o art&iacute;culos, realizar cursos e investigar. Me gusta mucho tambi&eacute;n trabajar con datos y&nbsp; jugar con ellos. <strong>Sobre todo me gusta mucho trabajar con datos abiertos.</strong></p>
+    </div>
+  </div>
+  <div class="row">
+      <p>Otro de los intereses que tengo es intentar compartir todo lo que aprendo con el objetivo de facilitar a otras personas poder avanzar sin problemas en el desarrollo del aprendizaje y de ah&iacute; viene ese inter&eacute;s por el que <b><a href="https://www.udemy.com/user/anartzmugika/" target="_blank" title="Cursos Online de Programación con Anartz Mugika Ledo">me he convertido instructor en línea </a></b></p>
+      <p>Como mis casos de &eacute;xito, se podr&iacute;a decir que he destacado m&aacute;s en el &aacute;mbito m&oacute;vil en el que tuve el privilegio de ser <strong><a href="https://www.irekia.euskadi.eus/es/news/31399-open-ispilu-servirace-guia-runner-proyectos-ganadores-categoria-aplicaciones-del-concurso-open-data-euskadi-que-organiza-gobierno-vasco-para-promover-uso-datos-abiertos" target="_blank">uno de los ganadores del concurso de datos abiertos</a> de mi comunidad aut&oacute;noma que es el Pa&iacute;s Vasco con el proyecto <a href="https://mugan86.com/serviraces/web/" target="_blank">Servirace</a></strong> aplicaci&oacute;n desarrollada desde Android 2.+ hasta la versi&oacute;n 8 en el que he invertido much&iacute;simas horas siendo el responsable del proyecto en todos los aspectos y desarroll&aacute;ndolo en mis ratos libres ajeno a mi trabajo.</p>
+  
+      <p>Cuando he trabajado como desarrollador m&oacute;vil he obtenido varios premios en diferentes concursos. En este caso <strong>he sido parte del equipo de desarrollo en el que he desempe&ntilde;ado las labores de desarrollador m&oacute;vil &uacute;nicamente</strong>.</p>
+  </div>
+  <!-- /.row -->
+
+  <!-- Team Members -->
+  <br/>
+  <h2>{{ 'portfolio.last' | translate }}</h2>
+  <app-loading  *ngIf="loading"></app-loading>
+  <div class="row">
+    <div class="col-lg-4 mb-4" *ngFor="let p of projects; let it = index;">
+      <app-card-project-item *ngIf="it < 3" [image]="p.thumbnail" [url]="p.url" [title]="p.name" 
+        [description]="p.intro" [startData]="p.startData" [finishData]="p.finishData"></app-card-project-item>
+    </div>
+    <!--<div class="col-lg-4 mb-4">
+      <div class="card h-100 text-center">
+        <app-poster-image [classValues]="'card-img-top'" [src]="'http://placehold.it/750x450'"></app-poster-image>
+        <div class="card-body">
+          <h4 class="card-title">Team Member</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum
+            fugiat odio officiis odit.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#">name@example.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card h-100 text-center">
+        <app-poster-image [classValues]="'card-img-top'" [src]="'http://placehold.it/750x450'"></app-poster-image>
+        <div class="card-body">
+          <h4 class="card-title">Team Member</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum
+            fugiat odio officiis odit.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#">name@example.com</a>
+        </div>
+      </div>
+    </div>-->
+  </div>
+  <!-- /.row -->
+
+  <!-- Our Customers -->
+  <!--<h2>Our Customers</h2>
+  <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+      <app-poster-image [classValues]="'img-fluid'" [src]="'http://placehold.it/500x300'"></app-poster-image>
+    </div>
+    <div class="col-lg-2 col-sm-4 mb-4">
+      <app-poster-image [classValues]="'img-fluid'" [src]="'http://placehold.it/500x300'"></app-poster-image>
+    </div>
+    <div class="col-lg-2 col-sm-4 mb-4">
+      <app-poster-image [classValues]="'img-fluid'" [src]="'http://placehold.it/500x300'"></app-poster-image>
+    </div>
+    <div class="col-lg-2 col-sm-4 mb-4">
+      <app-poster-image [classValues]="'img-fluid'" [src]="'http://placehold.it/500x300'"></app-poster-image>
+    </div>
+    <div class="col-lg-2 col-sm-4 mb-4">
+      <app-poster-image [classValues]="'img-fluid'" [src]="'http://placehold.it/500x300'"></app-poster-image>
+    </div>
+    <div class="col-lg-2 col-sm-4 mb-4">
+      <app-poster-image [classValues]="'img-fluid'" [src]="'http://placehold.it/500x300'"></app-poster-image>
+    </div>
+  </div>-->
+  <!-- /.row -->
+
+</div>

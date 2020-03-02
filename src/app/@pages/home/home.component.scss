@@ -1,0 +1,36 @@
+* {
+  scroll-behavior: smooth;
+}
+.no-hidden{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    visibility: visible;
+    border-radius: 3px;
+    background-color: cadetblue;
+}  
+
+.scrolling-box {
+  scroll-behavior: smooth; // Animates scrolling - "smooth" scrolling
+}
+
+/* para los cards */
+.skltn-card {
+  margin: 20px 0 48px;
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+  }
+  &__title {
+    height: 32px;
+    margin-bottom: 26px;
+  }
+  &__line {
+    height: 16px;
+    margin-bottom: 16px;
+    &:last-child {
+      width: 60%;
+    }
+  }
+}

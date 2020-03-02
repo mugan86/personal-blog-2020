@@ -1,0 +1,36 @@
+<div class="container">
+
+  <!-- Page Heading/Breadcrumbs -->
+ <!--<h1 class="mt-4 mb-3">{{ 'courses.title' | translate }}
+    <small>{{ 'courses.bestPrice' | translate }} </small>
+  </h1>-->
+  <br/>
+  <app-breadcrumb [title]="'menus.home'" [path]="'home'" [page]="'courses.title'"></app-breadcrumb>
+
+  <app-loading  *ngIf="loading"></app-loading>
+<div class="row" *ngIf="!loading">
+  <p>{{ 'courses.offerMessage' | translate }}</p>
+  <div class="col-lg-4 portfolio-item" *ngFor="let course of courses">
+    <div class="card h-100">
+      <a href="{{course.url}}" target="_blank" title="{{course.description}}">
+        <app-poster-image [classValues]="'card-img-top'" [src]="course.image" [alt]="course.description"></app-poster-image>
+      </a>
+      <div class="card-body">
+        <span class="categories" [ngStyle]="{'background-color': c.color}" *ngFor="let c of course.categories" >
+          {{ c.title }}
+        </span>
+        <h4 class="card-title">
+          <a href="{{course.url}}" target="_blank">{{ course.title }}</a>
+        </h4>
+        <p class="card-text">{{ course.description }}</p>
+        <a href="{{course.url}}" target="_blank" class="btn"
+          [ngClass]="{'btn-danger': !course.publish, 'btn-primary': course.publish}">
+          <span *ngIf="course.publish">{{ 'buttons.accessCourse' | translate }}</span>
+          <span *ngIf="!course.publish">{{ 'buttons.nextComming' | translate }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

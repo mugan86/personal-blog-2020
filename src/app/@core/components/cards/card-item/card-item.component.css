@@ -1,0 +1,9 @@
+app-poster-image {
+    width: 50% !important;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    position: relative;
+    top: 10px;
+    left: 25%;
+    margin-bottom: 10px;
+}

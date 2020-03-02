@@ -1,0 +1,83 @@
+{
+    "HELLO_WORLD": "ddddd",
+    "about": {
+        "title": "Anartz Mugika Ledo",
+        "description": "Sobre mí"
+    },
+    "articles": {
+        "last": "Últimos artículos",
+        "description": "Tutoriales, promoción de cursos,..."
+    },
+    "buttons": {
+        "olderPosts": "Post antiguos",
+        "readMore": "Leer más",
+        "goToInfo": "Ir a la información",
+        "accessCourse": "Accede al curso",
+        "nextComming": "Próximamente",
+        "goToProject": "Ir al proyecto"
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "Escribe un mensaje con lo que desees comentar"
+    },
+    "cookies":{
+        "message": "Este sitio utiliza cookies para mejorar la experiencia de usuario. Si continuas navegando considero que aceptas el uso de cookies."
+    },
+    "courses": {
+        "title": "Cursos",
+        "description": "Lista de cursos online",
+        "bestPrice": "¡¡¡Al mejor precio!!!",
+        "offerMessage": "¡¡Cursos siempre al precio más bajo posible!!. Para obtenerlo, tenéis que acceder desde los enlaces que corresponden a cada curso."
+    },
+    "footer": {
+        "medium": "Artículos técnicos, tutoriales, trucos,... ¡¡Todo en mi perfil de Medium!! - Anartz Mugika Ledo :)",
+        "bintray": "Proyectos de librería Android disponibles - Anartz Mugika Ledo",
+        "github": "Proyectos open source de Angular, Typescript, Javascript, GraphQL y más - Anartz Mugika Ledo",
+        "gplay": "Todas mis aplicaciones publicadas en Google Play - Anartz Mugika Ledo",
+        "linkedin": "Mi perfil en Linkedin - Anartz Mugika Ledo",
+        "npm": "NPM - Entra para ver mis proyectos de librerías Angular, JS, TS,... - Anartz Mugika Ledo",
+        "twitter": "Twitter - Sígueme y podrás tener todas las novedades sobre mis cursos y enlaces a tutoriales interesantes - Anartz Mugika Ledo",
+        "udemy": "Udemy - ¡Aprende GraphQL, NPM y más con mis cursos! - Anartz Mugika Ledo",
+        "youtube": "Youtube - ¡¡Entra a mi canal de Youtube para disfrutar de contenido gratis!! - Anartz Mugika Ledo"
+    },
+    "login": {
+        "description": "Formulario para el inicio de sesión",
+        "password": {
+            "main": "Introduzca la contraseña",
+            "input": "Introduzca la contraseña",
+            "required": "El password es necesario",
+            "minlength": "El password debe de tener 4 carácteres mínimo"
+        },
+        "startSession": "Iniciar sesión",
+        "startSessionTitle": "Introduzca credenciales",
+        "title": "Iniciar sesión",
+        "username": {
+            "main": "Introduzca tu correo electrónico",
+            "input": "Introducir correo electrónico",
+            "required": "El correo electrónico es necesario",
+            "minlength": "El correo debe de tener 4 carácteres mínimo"
+        }
+
+    },
+    "publishedBy": "Publicado por",
+    "menus": {
+        "about": "Sobre mi",
+        "admin": "Administración",
+        "closeSession": "Cerrar sesión",
+        "contact": "Contacto",
+        "courses": "Cursos",
+        "home": "Inicio",
+        "language": "Idioma",
+        "portfolio": "Portfolio",
+        "login": "Login",
+        "register": "Registro"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "Lista de los trabajos que he realizado",
+        "last": "Últimos proyectos",
+        "important": "Destacado",
+        "otherProyects": "Otros proyectos"
+    },
+    "showMoreArticles": "Mostrar más artículos"
+}

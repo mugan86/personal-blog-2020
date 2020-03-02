@@ -1,0 +1,21 @@
+<app-navbar [mainItem]="mainItem" [menuItems]="menuItems" [backgroundColor]="backgroundColor"></app-navbar>
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Panel de administración
+        <small>Opciones</small>
+    </h1>
+    
+    <app-breadcrumb [title]="'Admin'" [path]="'admin/dashboard'" [page]="'Dashboard'"></app-breadcrumb>
+    <app-loading *ngIf="!showContent"></app-loading>
+    <div class="row" *ngIf="showContent">
+        <!-- Sidebar Column -->
+        <div class="col-lg-3 mb-4">
+            <app-vertical-menu [items]="items"
+            [backgroundColor]="backgroundColor"></app-vertical-menu>
+        </div>
+        <!-- Content Column -->
+        <div class="col-lg-9 mb-4">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

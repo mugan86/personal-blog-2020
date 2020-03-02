@@ -1,0 +1,11 @@
+<div class="card h-100">
+  <app-poster-image [classValues]="'card-img-top'" [alt]="title" [src]="image"></app-poster-image>
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ description }}
+    </p>
+  </div>
+  <div class="card-footer">
+    <a [href]="url" target="_blank" class="btn btn-primary">{{ 'buttons.readMore' | translate }}</a>
+  </div>
+</div>

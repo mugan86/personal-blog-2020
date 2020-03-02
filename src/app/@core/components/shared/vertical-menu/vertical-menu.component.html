@@ -1,0 +1,5 @@
+<div class="list-group">
+  <a [routerLink]="item.link" routerLinkActive="active" class="list-group-item" *ngFor="let item of items; let i = index"
+  [ngStyle]="{'background-color': '' + item.link == currenRoute ? backgroundColor: nothing + '', 
+                'border-color': '' + item.link == currenRoute ? backgroundColor: nothing + ''}">{{ item.title }}</a>
+</div>

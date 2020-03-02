@@ -1,0 +1,12 @@
+#loading {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background-image: url('https://raw.githubusercontent.com/mugan86/start-bootstrap-clean-blog-angular/master/src/assets/img/loading.png')
+}
+
+.card {
+    margin: 10px auto;
+    border-radius: 6px;
+    padding: 10px;
+}

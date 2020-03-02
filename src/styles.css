@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+body {
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 40vh;
+  min-height: 200px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+a {
+  cursor: pointer;
+  color: #10588b;
+}
+
+.btn-primary {
+  background-color: #10588b;
+}
+
+.center-element {
+  display: table;
+  margin: 0 auto;
+}
+
+.all-width {
+  width:100%
+}
+
+.card-title {
+  color: #54595f;
+  font-family: "Roboto",Sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.title-section {
+  border-bottom: 1px dotted;
+}
