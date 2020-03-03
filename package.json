@@ -16,6 +16,7 @@
   "dependencies": {
     "@angular-devkit/core": "^9.0.4",
     "@angular/animations": "^9.0.4",
+    "@angular/cdk": "^9.1.0",
     "@angular/common": "^9.0.4",
     "@angular/compiler": "^9.0.4",
     "@angular/core": "^9.0.4",
