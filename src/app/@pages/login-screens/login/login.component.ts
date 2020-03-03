@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
         console.log('login not ok');
       } else {
         console.log(data);
-        // this.router.navigate(['/home']);
+        this.router.navigate(['/home']);
       }
     });
   }
