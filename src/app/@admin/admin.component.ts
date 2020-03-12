@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavbarMenuItem } from '@core/components/shared/navbar/navbar.interface';
 import { AuthService } from '@core/services/auth.service';
 import { MeData } from '@core/interfaces/me-data.interface';
-import { CurrentRouterService } from '@core/services/current-router.service';
 
 @Component({
   selector: 'app-admin',

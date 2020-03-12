@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~ng-pick-datetime/assets/style/picker.min.css";
+
+:root {
+  --primary-color: #009688;
+  --link-color: #2072ad;
+}
+
 body {
   padding-top: 56px;
 }
@@ -20,11 +26,12 @@ body {
 
 a {
   cursor: pointer;
-  color: #10588b;
+  color: var(--link-color);
 }
 
 .btn-primary {
-  background-color: #10588b;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .center-element {

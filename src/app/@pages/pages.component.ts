@@ -140,7 +140,7 @@ export class PagesComponent implements OnInit {
       ]
     }*/
   ];
-  backgroundColor = '#10588b';
+  backgroundColor = '#009688';
   constructor(private auth: AuthService) {
     this.auth.userVar$.subscribe((data: MeData) => {
       if (data !== null && data !== undefined) {

@@ -23,8 +23,9 @@ export class LoginComponent implements OnInit {
       this.currentRouter.updateCurrentUrl(this.router.url);
       this.auth.userVar$.subscribe((data: any) => {
       console.log(data);
-      if (data === null) {
+      if (data === null || data === false) {
         this.show = true;
+        window.localStorage.removeItem('tokenJWT');
         console.log('login not ok');
       } else {
         console.log(data);

@@ -12,6 +12,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.auth.accessVar$.subscribe((data: boolean) => {
       console.log('login?: ', data);
+      if (data === false) {
+        localStorage.removeItem('tokenJWT');
+      }
     });
   }
 }
