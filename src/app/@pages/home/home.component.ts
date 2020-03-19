@@ -36,10 +36,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.carouselItems.push({
-      title: 'Angular Good Practices',
-      description: '5 Tips & Best Practices to Organize your Angular Project',
-      background: 'https://miro.medium.com/max/3690/1*GAm1ATriUWkSWOtMRNVodQ.png',
-      url: 'https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e'
+      title: 'Introducción a GraphQL desde las bases hasta crear APIs',
+      description: 'Primeros pasos con GraphQL: Lenguaje de manipulación y consulta de datos Open Source para API. ' + 
+                    'Desarrollado por Facebook',
+      background: 'https://miro.medium.com/max/2150/1*rZg1Kae1Xc8pDDbNqYMtyQ.png',
+      url: 'https://www.udemy.com/course/introduccion-a-graphql-desde-las-bases-hasta-crear-apis/'
     });
     this.carouselItems.push({
       title: 'Angular PWA',
