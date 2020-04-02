@@ -18,11 +18,11 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
     AdminModule,
     PagesModule,
+    AppRoutingModule,
     TranslateCustomModule.forRoot(['es', 'en', 'eu'], 'es'),
     GraphqlModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
